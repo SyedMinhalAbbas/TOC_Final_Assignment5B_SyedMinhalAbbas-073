@@ -35,7 +35,7 @@ public class MPpositionController : MonoBehaviour
         int i = 0;
         while (i < totalnumberofMP)
         {
-            MPindex = Random.Range(0, 45);
+            MPindex = Random.Range(0, 73);
             if (!MPindexes.Contains(MPindex) || MPindexes.Count == 0)
             {
                 MPindexes.Add(MPindex);
@@ -55,7 +55,7 @@ public class MPpositionController : MonoBehaviour
         int cubeNumber = 0;
         List<int> parenthesisIndexes = new List<int>();
 
-        while (cubeNumber < 46)
+        while (cubeNumber < 73)
         {
             randString = "";
             float theXPosition = Random.Range(minimumPosition, maximumPosition);
@@ -74,7 +74,7 @@ public class MPpositionController : MonoBehaviour
                 sphere.transform.position = new Vector3(theXPosition, 1.1f, theZPosition);
                 cube.transform.position = theNewPos;
                 randomString = GameObject.Find("Sphere" + cubeNumber + "/Canvas/cubetext").GetComponent<Text>();
-                string[] characters = new string[] { "x", "h", "6", "(", ")" };
+                string[] characters = new string[] { "x", "m", "3", "(", ")" };
                 thestringlength = Random.Range(9, 15);
 
                 if (MPindexes.Contains(cubeNumber))
@@ -213,7 +213,7 @@ public class MPpositionController : MonoBehaviour
 
     void Start()
     {
-        totalnumberofMP = 46 / 3;
+        totalnumberofMP = 73 / 3;
         MPpositionController.totalMP = totalnumberofMP;
         spawn();
     }

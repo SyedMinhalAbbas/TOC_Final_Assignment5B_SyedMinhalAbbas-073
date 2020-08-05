@@ -105,7 +105,8 @@ public class MPplayerController : MonoBehaviour
                     if (count == MPpositionController.totalnumberofMP)
                     {
                         Time.timeScale = 0;
-                        winText.text = "Matching Parenthesis Captured :" + MPpositionController.totalnumberofMP;
+                        winText.text = "Hurrahh....!!!!!!!!!!!!!!!!!!!!!" +
+                            "Captured Matching Parenthesis  :" + MPpositionController.totalnumberofMP;
 
                     }
                     //SetCountText();

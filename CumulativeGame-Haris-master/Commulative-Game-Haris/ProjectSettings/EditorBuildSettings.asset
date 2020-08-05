@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MatchingParenthesisMenu.unity
     guid: 392b20b92c14b554a9a6f86b2bf7863d
   - enabled: 1
+    path: Assets/Scenes/Rolling.unity
+    guid: eb6170dabec33a5438e271610bfe1bc9
+  - enabled: 0
     path: Assets/Scenes/5A.unity
     guid: 67139c15d523bed4099c6e769dbd79b1
   - enabled: 1
